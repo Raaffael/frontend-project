@@ -14,14 +14,20 @@ body{
    
 }
 #keyInput{
+    background-color: black;
     border: 5px solid gold;
-    flex-grow: 5;
+    flex-grow: 7;
     margin: 5px;
+    resize: none;
+    color: white;
 }
 #textInput{
+    background-color: black;
     border: 5px solid gold;
     flex-grow: 4;
     margin: 5px;
+    resize: none;
+    color: white;
 }
 #key{
     border: 5px solid gold;

@@ -1,7 +1,8 @@
 var $body = $('body');
 var $textInput = $('#textInput');
 var $keyInput = $('#keyInput');
-var $encryptButton = $('#encrypt')
+var $encryptButton = $('#encrypt');
+var $generateKey = $('#key');
 
 
 
@@ -13,7 +14,12 @@ run();
 
 function run(){
     $encryptButton.click(function(){
+        $textInput.val('');
         encryptData($textInput.val(),$keyInput.val())
+    })
+    $generateKey.click(function(){
+        $keyInput.val('');
+        genKey();
     })
 }
 
@@ -33,9 +39,18 @@ async function encryptData(message, secret) {
         });
         const result = await response.json();
         console.log(result);
-        alert('Your encrypted message is: '+result.result)
+        $textInput.val(result.result);
     } catch (error) {
         console.error(error);
+    }
+}
+async function genKey(){
+    try {
+        const response = await fetch('https://classify-web.herokuapp.com/api/keygen?length=32?symbols=1');
+        $keyInput.val(response);
+        console.log(response.body)
+    } catch (error) {
+        console.error(error)
     }
 }
 
