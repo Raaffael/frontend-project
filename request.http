@@ -1,0 +1,18 @@
+###
+
+POST  https://classify-web.herokuapp.com/api/encrypt/
+Content-Type: application/json
+
+{
+    "data": "Hello world",
+    "key" : "secret"
+}
+
+###
+
+GET https://classify-web.herokuapp.com/api/keygen?length=32?symbols=1
+
+
+###
+
+GET https://hashable-api.herokuapp.com/hash?str=hello world&method=md5&encoding=hex

@@ -1,0 +1,48 @@
+body{
+    background-color: black;
+    padding: 10px;
+}
+#mainDiv{
+    padding: 10px;
+    height: 400px;
+    width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+   
+}
+#keyInput{
+    border: 5px solid gold;
+    flex-grow: 5;
+    margin: 5px;
+}
+#textInput{
+    border: 5px solid gold;
+    flex-grow: 4;
+    margin: 5px;
+}
+#key{
+    border: 5px solid gold;
+    flex-grow: 1;
+    margin: 5px;
+    background-color: black;
+    color: gold;
+}
+#keyArea{
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+}
+#encrypt{
+    border: 5px solid gold;
+    flex-grow: 1;
+    margin: 5px;
+    background-color: black;
+    color: gold;
+}
+input{
+    background-color: black;
+    color: white;
+}
