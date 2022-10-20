@@ -1,6 +1,7 @@
 body{
     background-color: black;
     padding: 10px;
+    display: flex;
 }
 #mainDiv{
     padding: 10px;
@@ -14,14 +15,9 @@ body{
    
 }
 #keyInput{
-    background-color: black;
-    border: 5px solid gold;
     flex-grow: 7;
-    margin: 5px;
-    resize: none;
-    color: white;
 }
-#textInput{
+.textArea{
     background-color: black;
     border: 5px solid gold;
     flex-grow: 4;
@@ -29,26 +25,23 @@ body{
     resize: none;
     color: white;
 }
-#key{
-    border: 5px solid gold;
-    flex-grow: 1;
-    margin: 5px;
-    background-color: black;
-    color: gold;
-}
 #keyArea{
     display: flex;
     flex-direction: row;
     flex-grow: 1;
 }
-#encrypt{
+.button{
     border: 5px solid gold;
     flex-grow: 1;
     margin: 5px;
     background-color: black;
     color: gold;
 }
-input{
-    background-color: black;
+p{
+    flex-grow: 1;
     color: white;
+    width: 600px;
+    display: flex;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10px;
 }
