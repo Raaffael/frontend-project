@@ -1,9 +1,10 @@
-body{
+body {
     background-color: black;
     padding: 10px;
     display: flex;
 }
-#mainDiv{
+
+#mainDiv {
     padding: 10px;
     height: 400px;
     width: 600px;
@@ -12,12 +13,14 @@ body{
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
-   
+
 }
-#keyInput{
+
+#keyInput {
     flex-grow: 7;
 }
-.textArea{
+
+.textArea {
     background-color: black;
     border: 5px solid gold;
     flex-grow: 4;
@@ -25,19 +28,22 @@ body{
     resize: none;
     color: white;
 }
-#keyArea{
+
+#keyArea {
     display: flex;
     flex-direction: row;
     flex-grow: 1;
 }
-.button{
+
+.button {
     border: 5px solid gold;
     flex-grow: 1;
     margin: 5px;
     background-color: black;
     color: gold;
 }
-p{
+
+p {
     flex-grow: 1;
     color: white;
     width: 600px;
